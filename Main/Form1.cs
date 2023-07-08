@@ -41,30 +41,30 @@ namespace Gameshop1
             //Add games here....
             //22 games
             //11 xbox games
-            XboxGame xboxGame = new XboxGame("Xbox One", "Elder Scrolls", "Rockstar Games", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
-            XboxGame xboxGame1 = new XboxGame("Xbox Series X and Series S", "Fortnite", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
-            XboxGame xboxGame2 = new XboxGame("Xbox One", "Forza 5", "Rockstar Games", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
-            XboxGame xboxGame3 = new XboxGame("Xbox Series X and Series S", "Gta V", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame = new XboxGame("Xbox One", "Elder Scrolls", "Bethesda Softworks", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
+            XboxGame xboxGame1 = new XboxGame("Xbox Series X and Series S", "Fortnite", "Epic Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame2 = new XboxGame("Xbox One", "Forza 5", "Microsoft Studios", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
+            XboxGame xboxGame3 = new XboxGame("Xbox Series X and Series S", "Gta V", "Rockstar Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
             XboxGame xboxGame4 = new XboxGame("Xbox One", "Halo", "Rockstar Games", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
-            XboxGame xboxGame5 = new XboxGame("Xbox Series X and Series S", "Miencraft", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
-            XboxGame xboxGame6 = new XboxGame("Xbox One", "Pubg", "Rockstar Games", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
-            XboxGame xboxGame7 = new XboxGame("Xbox Series X and Series S", "R6S", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
-            XboxGame xboxGame8 = new XboxGame("Xbox One", "Robolox", "Rockstar Games", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
-            XboxGame xboxGame9 = new XboxGame("Xbox Series X and Series S", "Wireframe", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
-            XboxGame xboxGame10 = new XboxGame("Xbox Series X and Series S", "Hitman 2", "Sledgehammer Games", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame5 = new XboxGame("Xbox Series X and Series S", "Minecraft", "Mojang Studios", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame6 = new XboxGame("Xbox One", "Pubg", "Krafton", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
+            XboxGame xboxGame7 = new XboxGame("Xbox Series X and Series S", "R6S", "Ubisoft", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame8 = new XboxGame("Xbox One", "Robolox", "Roblox Corporation", new DateTime(2013, 9, 17), 150, Game.Condition.mint);
+            XboxGame xboxGame9 = new XboxGame("Xbox Series X and Series S", "Warframe", "Digital Extremes", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
+            XboxGame xboxGame10 = new XboxGame("Xbox Series X and Series S", "Hitman 2", "IO Interactive", new DateTime(2021, 9, 10), 520, Game.Condition.fair);
             //11 ps games details. For store
-            PSGame pSGame = new PSGame("Play Station 5", "Spiderman", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame1 = new PSGame("Play Station 4", "Red Dead Redemtion 2", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
-            PSGame pSGame2 = new PSGame("Play Station 5", "Fifa 22", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame3 = new PSGame("Play Station 4", "Apex Legends", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
-            PSGame pSGame4 = new PSGame("Play Station 5", "NBA 2K22", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame5 = new PSGame("Play Station 4", "Far Cry 6", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
-            PSGame pSGame6 = new PSGame("Play Station 5", "Dying Light 2", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame7 = new PSGame("Play Station 4", "Cyberpunk 2077", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
-            PSGame pSGame8 = new PSGame("Play Station 5", "Call of Duty Modern Warfare", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame9 = new PSGame("Play Station 4", "Battlefield 2042", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
-            PSGame pSGame10 = new PSGame("Play Station 5", "Rocket League", "Rockstar North", new DateTime(2018, 10, 25), 600, Game.Condition.good);
-            PSGame pSGame11 = new PSGame("Play Station 4", "ARK Survival Evolved", "IO Interactive", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame = new PSGame("Play Station 5", "Spiderman", "Activision", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame1 = new PSGame("Play Station 4", "Red Dead Redemtion 2", "Rockstar Games", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame2 = new PSGame("Play Station 5", "Fifa 22", "Electronic Arts", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame3 = new PSGame("Play Station 4", "Apex Legends", "Electronic Arts", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame4 = new PSGame("Play Station 5", "NBA 2K22", "Visual Concepts", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame5 = new PSGame("Play Station 4", "Far Cry 6", "Ubisoft", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame6 = new PSGame("Play Station 5", "Dying Light 2", "Techland", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame7 = new PSGame("Play Station 4", "Cyberpunk 2077", "CD Projekt", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame8 = new PSGame("Play Station 5", "Call of Duty Modern Warfare", "Activision", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame9 = new PSGame("Play Station 4", "Battlefield 2042", "Electronic Arts", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
+            PSGame pSGame10 = new PSGame("Play Station 5", "Rocket League", "Psyonix", new DateTime(2018, 10, 25), 600, Game.Condition.good);
+            PSGame pSGame11 = new PSGame("Play Station 4", "ARK Survival Evolved", "Studio Wildcard", new DateTime(2018, 11, 9), 500, Game.Condition.poor);
 
             //to display the game pic
             pictureBox1.Image = imageList1.Images[0];
