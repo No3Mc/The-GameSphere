@@ -28,8 +28,7 @@ namespace Gameshop1
             }
             pictureBox2.Image = imageList2.Images[count];
             pictureBox1.Image = imageList1.Images[count];
-            //pictureBox2.Image = imageList2.Images[count];
-            //pictureBox2.Image = imageList2.Images[count];
+
             shop.StepToPreviousGame();
             DisplayGame();
         }
@@ -178,6 +177,11 @@ namespace Gameshop1
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

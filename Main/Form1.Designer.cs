@@ -21,6 +21,7 @@ namespace Gameshop1
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -46,16 +47,18 @@ namespace Gameshop1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCurrentGame
             // 
             this.labelCurrentGame.AutoSize = true;
             this.labelCurrentGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCurrentGame.Location = new System.Drawing.Point(619, 584);
+            this.labelCurrentGame.Location = new System.Drawing.Point(1138, 625);
             this.labelCurrentGame.Name = "labelCurrentGame";
             this.labelCurrentGame.Size = new System.Drawing.Size(54, 20);
             this.labelCurrentGame.TabIndex = 0;
@@ -66,19 +69,19 @@ namespace Gameshop1
             this.textBoxGame.BackColor = System.Drawing.Color.DarkSlateGray;
             this.textBoxGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGame.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxGame.Location = new System.Drawing.Point(12, 337);
+            this.textBoxGame.Location = new System.Drawing.Point(127, 320);
             this.textBoxGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxGame.Multiline = true;
             this.textBoxGame.Name = "textBoxGame";
             this.textBoxGame.ReadOnly = true;
-            this.textBoxGame.Size = new System.Drawing.Size(601, 280);
+            this.textBoxGame.Size = new System.Drawing.Size(1010, 216);
             this.textBoxGame.TabIndex = 1;
             this.textBoxGame.TextChanged += new System.EventHandler(this.textBoxGame_TextChanged);
             // 
             // buttonPrevious
             // 
             this.buttonPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrevious.Location = new System.Drawing.Point(623, 369);
+            this.buttonPrevious.Location = new System.Drawing.Point(127, 550);
             this.buttonPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPrevious.Name = "buttonPrevious";
             this.buttonPrevious.Size = new System.Drawing.Size(112, 42);
@@ -90,7 +93,7 @@ namespace Gameshop1
             // buttonNext
             // 
             this.buttonNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext.Location = new System.Drawing.Point(760, 369);
+            this.buttonNext.Location = new System.Drawing.Point(1023, 540);
             this.buttonNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(114, 42);
@@ -101,7 +104,7 @@ namespace Gameshop1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(718, 424);
+            this.button1.Location = new System.Drawing.Point(127, 13);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 42);
@@ -112,7 +115,7 @@ namespace Gameshop1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(718, 491);
+            this.button2.Location = new System.Drawing.Point(281, 13);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 42);
@@ -124,10 +127,10 @@ namespace Gameshop1
             // btdel
             // 
             this.btdel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdel.Location = new System.Drawing.Point(623, 464);
+            this.btdel.Location = new System.Drawing.Point(524, 551);
             this.btdel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btdel.Name = "btdel";
-            this.btdel.Size = new System.Drawing.Size(83, 33);
+            this.btdel.Size = new System.Drawing.Size(125, 32);
             this.btdel.TabIndex = 13;
             this.btdel.Text = "Delete";
             this.btdel.UseVisualStyleBackColor = true;
@@ -135,10 +138,10 @@ namespace Gameshop1
             // btadd
             // 
             this.btadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btadd.Location = new System.Drawing.Point(623, 428);
+            this.btadd.Location = new System.Drawing.Point(393, 551);
             this.btadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btadd.Name = "btadd";
-            this.btadd.Size = new System.Drawing.Size(81, 33);
+            this.btadd.Size = new System.Drawing.Size(125, 32);
             this.btadd.TabIndex = 12;
             this.btadd.Text = "Add";
             this.btadd.UseVisualStyleBackColor = true;
@@ -147,10 +150,10 @@ namespace Gameshop1
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(623, 500);
+            this.button3.Location = new System.Drawing.Point(655, 550);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 33);
+            this.button3.Size = new System.Drawing.Size(125, 33);
             this.button3.TabIndex = 14;
             this.button3.Text = "Search";
             this.button3.UseVisualStyleBackColor = true;
@@ -185,9 +188,9 @@ namespace Gameshop1
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(270, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(127, 92);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(347, 307);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 223);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -195,7 +198,7 @@ namespace Gameshop1
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(16, 100);
+            this.pictureBox2.Location = new System.Drawing.Point(381, 92);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(248, 223);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -205,9 +208,9 @@ namespace Gameshop1
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(623, 100);
+            this.pictureBox3.Location = new System.Drawing.Point(635, 92);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(251, 223);
+            this.pictureBox3.Size = new System.Drawing.Size(248, 223);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
@@ -247,11 +250,22 @@ namespace Gameshop1
             this.imageList3.ImageSize = new System.Drawing.Size(256, 256);
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(889, 92);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(248, 223);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 628);
+            this.ClientSize = new System.Drawing.Size(1374, 672);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -271,6 +285,7 @@ namespace Gameshop1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,6 +308,7 @@ namespace Gameshop1
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.ImageList imageList3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 
