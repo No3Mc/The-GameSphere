@@ -162,8 +162,10 @@ namespace Gameshop1
         {
             //should open the adding games form where people can enter new games
             //AddG add = new AddG("");
-            //AddG addForm = new AddG;
-            //addForm.ShowDialog();
+            AddG addForm = new AddG();
+            addForm.ShowDialog();
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -185,5 +187,37 @@ namespace Gameshop1
         {
 
         }
+
+        private void btdel_Click(object sender, EventArgs e)
+        {
+            DelG addForm = new DelG();
+            addForm.ShowDialog();
+        }
+
+
+        private void SearchG_Click(object sender, EventArgs e)
+        {
+            string searchTerm = textBoxSearch.Text; // Get the search term from a text box
+
+            Game searchedGame = shop.SearchGame(searchTerm); // Search for the game
+
+            if (searchedGame != null)
+            {
+                int gameIndex = shop.GetGameIndex(searchedGame); // Get the index of the searched game
+                count = gameIndex; // Update the count variable for image display
+
+                pictureBox1.Image = imageList1.Images[gameIndex]; // Update the image displayed
+                pictureBox2.Image = imageList2.Images[gameIndex];
+
+                shop.ViewGame(gameIndex); // Set the currently viewed game to the searched game
+                DisplayGame(); // Display the details of the searched game
+            }
+            else
+            {
+                // Game not found, display an error message or perform any other desired action
+                MessageBox.Show("Game not found!");
+            }
+        }
+
     }
 }

@@ -40,7 +40,7 @@ namespace Gameshop1
             this.button2 = new System.Windows.Forms.Button();
             this.btdel = new System.Windows.Forms.Button();
             this.btadd = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SearchG = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,6 +48,7 @@ namespace Gameshop1
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,7 +105,7 @@ namespace Gameshop1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(127, 13);
+            this.button1.Location = new System.Drawing.Point(117, 13);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 42);
@@ -134,6 +135,7 @@ namespace Gameshop1
             this.btdel.TabIndex = 13;
             this.btdel.Text = "Delete";
             this.btdel.UseVisualStyleBackColor = true;
+            this.btdel.Click += new System.EventHandler(this.btdel_Click);
             // 
             // btadd
             // 
@@ -147,16 +149,17 @@ namespace Gameshop1
             this.btadd.UseVisualStyleBackColor = true;
             this.btadd.Click += new System.EventHandler(this.btadd_Click);
             // 
-            // button3
+            // SearchG
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(655, 550);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 33);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SearchG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchG.Location = new System.Drawing.Point(737, 17);
+            this.SearchG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SearchG.Name = "SearchG";
+            this.SearchG.Size = new System.Drawing.Size(125, 33);
+            this.SearchG.TabIndex = 14;
+            this.SearchG.Text = "Search";
+            this.SearchG.UseVisualStyleBackColor = true;
+            this.SearchG.Click += new System.EventHandler(this.SearchG_Click);
             // 
             // imageList1
             // 
@@ -260,16 +263,24 @@ namespace Gameshop1
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.Location = new System.Drawing.Point(488, 23);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(243, 22);
+            this.textBoxSearch.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1374, 672);
+            this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.SearchG);
             this.Controls.Add(this.btdel);
             this.Controls.Add(this.btadd);
             this.Controls.Add(this.button2);
@@ -301,7 +312,7 @@ namespace Gameshop1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btdel;
         private System.Windows.Forms.Button btadd;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SearchG;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -309,6 +320,7 @@ namespace Gameshop1
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.ImageList imageList3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox textBoxSearch;
     }
 }
 
