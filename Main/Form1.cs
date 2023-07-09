@@ -197,26 +197,7 @@ namespace Gameshop1
 
         private void SearchG_Click(object sender, EventArgs e)
         {
-            string searchTerm = textBoxSearch.Text; // Get the search term from a text box
-
-            Game searchedGame = shop.SearchGame(searchTerm); // Search for the game
-
-            if (searchedGame != null)
-            {
-                int gameIndex = shop.GetGameIndex(searchedGame); // Get the index of the searched game
-                count = gameIndex; // Update the count variable for image display
-
-                pictureBox1.Image = imageList1.Images[gameIndex]; // Update the image displayed
-                pictureBox2.Image = imageList2.Images[gameIndex];
-
-                shop.ViewGame(gameIndex); // Set the currently viewed game to the searched game
-                DisplayGame(); // Display the details of the searched game
-            }
-            else
-            {
-                // Game not found, display an error message or perform any other desired action
-                MessageBox.Show("Game not found!");
-            }
+ 
         }
 
     }
